@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/PhamacyApplication_MayankGoyal/Pharmacy-Backend/Pharmacy-Backend.csproj": {}
+    "/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/Pharmacy-Backend.csproj": {}
   },
   "projects": {
-    "/workspaces/PhamacyApplication_MayankGoyal/Pharmacy-Backend/Pharmacy-Backend.csproj": {
+    "/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/Pharmacy-Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/PhamacyApplication_MayankGoyal/Pharmacy-Backend/Pharmacy-Backend.csproj",
+        "projectUniqueName": "/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/Pharmacy-Backend.csproj",
         "projectName": "Pharmacy-Backend",
-        "projectPath": "/workspaces/PhamacyApplication_MayankGoyal/Pharmacy-Backend/Pharmacy-Backend.csproj",
+        "projectPath": "/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/Pharmacy-Backend.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/PhamacyApplication_MayankGoyal/Pharmacy-Backend/obj/",
+        "outputPath": "/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
