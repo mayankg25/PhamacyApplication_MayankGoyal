@@ -3,8 +3,8 @@
         "Id": 1,
         "Name": "Paracetamol",
         "Notes": "Paracetamol (acetaminophen) is a widely used analgesic and antipyretic for mild-to-moderate pain and fever, effective within an hour.",
-        "ExpiryDate": "2026-05-08",
-        "Quantity": 10,
+        "ExpiryDate": "2027-05-08",
+        "Quantity": 1,
         "Price": 25,
         "Brand": "Panadol"
     }
