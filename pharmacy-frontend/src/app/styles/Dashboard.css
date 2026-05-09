@@ -1,0 +1,49 @@
+.dashboard-container {
+    padding: 20px;
+}
+
+.dashboard-title {
+    margin-bottom: 20px;
+}
+
+.medicine-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.medicine-table th {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.medicine-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.expiry-warning {
+    background-color: #f8d7da;
+}
+
+.quantity-warning {
+    background-color: #fff3cd;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-right: 15px;
+    color: #1976d2;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #d32f2f;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+}
