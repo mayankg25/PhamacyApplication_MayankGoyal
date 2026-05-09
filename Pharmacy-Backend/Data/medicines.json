@@ -1,11 +1,47 @@
 [
-    {
-        "Id": 1,
-        "Name": "Paracetamol",
-        "Notes": "Paracetamol (acetaminophen) is a widely used analgesic and antipyretic for mild-to-moderate pain and fever, effective within an hour.",
-        "ExpiryDate": "2027-05-08",
-        "Quantity": 1,
-        "Price": 25,
-        "Brand": "Panadol"
-    }
+  {
+    "Id": 1,
+    "Name": "Paracetamol",
+    "Notes": "Paracetamol (acetaminophen) is a widely used analgesic and antipyretic for mild-to-moderate pain and fever, effective within an hour.",
+    "ExpiryDate": "2027-05-08",
+    "Quantity": 1,
+    "Price": 25,
+    "Brand": "Panadol"
+  },
+  {
+    "Id": 2,
+    "Name": "Ondem-MD",
+    "Notes": "Ondem-MD (ondansetron) is an antiemetic medication used to prevent and treat nausea and vomiting, especially after surgery, chemotherapy, or radiation.",
+    "ExpiryDate": "2026-05-11",
+    "Quantity": 30,
+    "Price": 45.25,
+    "Brand": "Cipla"
+  },
+  {
+    "Id": 3,
+    "Name": "Sporlac",
+    "Notes": "Sporlac is a popular brand of probiotic supplements in India designed to support digestive health and restore gut flora.",
+    "ExpiryDate": "2027-04-30",
+    "Quantity": 99,
+    "Price": 333,
+    "Brand": "Sanzyme (P) Ltd"
+  },
+  {
+    "Id": 4,
+    "Name": "Digene Gel",
+    "Notes": "Digene is used to provide relief from acidity, heartburn, indigestion, gastritis, and abdominal cramps.",
+    "ExpiryDate": "2028-06-30",
+    "Quantity": 499,
+    "Price": 220.53,
+    "Brand": "Abbott India Ltd."
+  },
+  {
+    "Id": 5,
+    "Name": "A to Z NS Oral Drops",
+    "Notes": "A to Z NS Oral Drops (and variants like A to Z NS\u002B or A to Z Drops) are popular multivitamin and multimineral oral drops, often Mango flavored.",
+    "ExpiryDate": "2026-05-31",
+    "Quantity": 29,
+    "Price": 135,
+    "Brand": "Alkem Laboratories Ltd."
+  }
 ]
