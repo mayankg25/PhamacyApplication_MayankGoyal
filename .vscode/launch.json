@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run .NET API",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/Pharmacy-Backend/bin/Debug/net10.0/Pharmacy-Backend.dll",
+      "cwd": "${workspaceFolder}/Pharmacy-Backend",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "requireExactSource": false,
+      "suppressJITOptimizations": true
+    }
+  ]
+}

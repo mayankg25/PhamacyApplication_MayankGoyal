@@ -1,0 +1,7 @@
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/rpswa.dswa.cache.json
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.AssemblyInfoInputs.cache
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.AssemblyInfo.cs
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.csproj.CoreCompileInputs.cache
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/PhamacyApplication_MayankGoyal/pharmacy-backend/obj/Debug/net8.0/Pharmacy-Backend.sourcelink.json
