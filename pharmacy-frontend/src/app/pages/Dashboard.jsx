@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function Dashboard() {
     const navigate = useNavigate();
     const [medicines, setMedicines] = useState([]);
+    const [searchText, setSearchText] =useState("");
 
     useEffect(() => {
         loadMedicines();
@@ -20,6 +21,14 @@ export default function Dashboard() {
             console.error("Error fetching medicines:", error);
         }
     };
+
+    const filteredMedicines = medicines.filter((medicine) =>
+        medicine.name
+            .toLowerCase()
+            .includes(
+                searchText.toLowerCase()
+            )
+    );
 
     const getRowClass = (medicine) => {
         const expiryDate = new Date(medicine.expiryDate);
@@ -73,6 +82,18 @@ export default function Dashboard() {
                 Medicine Dashboard
             </h2>
 
+            <div className="search-container">
+                <input
+                    type="text"
+                    placeholder="Search by medicine name..."
+                    value={searchText}
+                    onChange={(e) =>
+                        setSearchText(e.target.value)
+                    }
+                    className="search-box"
+                />
+            </div>
+
             <table className="medicine-table">
                 <thead>
                     <tr>
@@ -85,8 +106,8 @@ export default function Dashboard() {
                     </tr>
                 </thead>
                 <tbody>
-                    {medicines.length > 0 ? (
-                        medicines.map((medicine) => (
+                    {filteredMedicines.length > 0 ? (
+                        filteredMedicines.map((medicine) => (
                             <tr
                                 key={medicine.id}
                                 className={getRowClass(medicine)}
