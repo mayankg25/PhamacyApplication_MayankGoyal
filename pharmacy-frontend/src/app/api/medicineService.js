@@ -7,6 +7,12 @@ export const getMedicines = async () => {
     return await response.json();
 };
 
+//GET medicine by ID
+export const getMedicineById = async (id) => {
+    const response = await fetch(`${API_URL}/${id}`);
+    return await response.json();
+};
+
 // DELETE medicine
 export const deleteMedicine = async (id) => {
     await fetch(`${API_URL}/${id}`, {
@@ -27,5 +33,23 @@ export const addMedicine = async (medicine) => {
     if (!response.ok) {
         throw new Error("Failed to add medicine");
     }
-    return await response;
+    return response;
+};
+
+//UPDATE medicine
+export const updateMedicine = async (id, medicine) => {
+    const response = await fetch(`${API_URL}/${id}`,
+        {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(medicine)
+        }
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to update medicine");
+    }
+    return response;
 };

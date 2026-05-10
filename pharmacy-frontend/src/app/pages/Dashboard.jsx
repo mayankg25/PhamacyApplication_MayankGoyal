@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import "../styles/Dashboard.css";
 import { getMedicines, deleteMedicine } from "../api/medicineService";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
+    const navigate = useNavigate();
     const [medicines, setMedicines] = useState([]);
 
     useEffect(() => {
@@ -45,7 +47,7 @@ export default function Dashboard() {
     };
 
     const handleEdit = (id) => {
-        console.log("Edit medicine:", id);
+        navigate(`/edit-medicine/${id}`);
     };
 
     const handleDelete = async (id) => {
