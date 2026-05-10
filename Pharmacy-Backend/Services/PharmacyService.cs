@@ -21,8 +21,45 @@ public class PharmacyService
         return ReadFile();
     }
 
+    public Medicine? GetMedicineById(int id)
+    {
+        var data = ReadFile();
+        return data.FirstOrDefault(x => x.Id == id);
+    }
+
     public void Add(Medicine medicine)
     {
+        ArgumentNullException.ThrowIfNull(medicine);
+
+        if (string.IsNullOrWhiteSpace(
+            medicine.Name))
+        {
+            throw new Exception(
+                "Medicine name is required."
+            );
+        }
+
+        if (medicine.Quantity <= 0)
+        {
+            throw new Exception(
+                "Quantity must be greater than zero."
+            );
+        }
+
+        if (medicine.Price <= 0)
+        {
+            throw new Exception(
+                "Price must be greater than zero."
+            );
+        }
+
+        if (medicine.ExpiryDate <= DateTime.Now)
+        {
+            throw new Exception(
+                "Expiry date must be future date."
+            );
+        }
+
         var data = ReadFile();
         medicine.Id = data.Count > 0 ? data.Max(x => x.Id) + 1 : 1;
 
@@ -33,18 +70,14 @@ public class PharmacyService
     public void Update(Medicine medicine)
     {
         var data = ReadFile();
-        var existing = data.FirstOrDefault(x => x.Id == medicine.Id);
-
-        if (existing != null)
-        {
-            existing.Name = medicine.Name;
-            existing.Price = medicine.Price;
-            existing.Notes = medicine.Notes;
-            existing.ExpiryDate = medicine.ExpiryDate;
-            existing.Quantity = medicine.Quantity;
-            existing.Brand = medicine.Brand;
-            WriteFile(data);
-        }
+        var existing = data.FirstOrDefault(x => x.Id == medicine.Id) ?? throw new Exception("Medicine not found.");
+        existing.Name = medicine.Name;
+        existing.Price = medicine.Price;
+        existing.Notes = medicine.Notes;
+        existing.ExpiryDate = medicine.ExpiryDate;
+        existing.Quantity = medicine.Quantity;
+        existing.Brand = medicine.Brand;
+        WriteFile(data);
     }
 
     public void Delete(int id)
